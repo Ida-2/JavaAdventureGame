@@ -21,6 +21,7 @@ public class Game {
         start.castleTown();
         start.evening();
         start.onRun();
+        start.castle();
     }
 
     public void playerSetUp(){
@@ -188,7 +189,7 @@ public class Game {
             System.out.println("Unknown female voice: Watch out!");
             System.out.println("The hooded female on the horse crashes onto you.");
             System.out.println("The woman, horse and you went tumbling.");
-            System.out.println("Luckily you lived with horses for many years, and you got on the horse, calmed it.");
+            System.out.println("Luckily you lived with horses for many years, so you got on the horse, calmed it.");
             System.out.println("You grabbed the half unconscious female. And rode away.");
             System.out.println("You lost 5 hp");
             System.out.println("");
@@ -201,7 +202,28 @@ public class Game {
         }
     }
     public void onRun(){
-
+        playerHp = playerHp + 30;
+        System.out.println("");
+        System.out.println("You rode on the horse long enough that the guards gave up on you.");
+        System.out.println("You have no idea why you did this, or how to get out this. But here you are.");
+        System.out.println("The mysterious woman started to wake up, and looks up at you.");
+        System.out.println("");
+        System.out.println("Unknown woman: Thanks, whoever you are. I guess.");
+        System.out.println("");
+        System.out.println("You stare at her, and think to yourself this isn't bad at all!");
+        System.out.println("Before you knew it, she suddenly had teeth, and tore your face off!");
+        System.out.println("You woke up in the slum, back at the castle town.");
+        System.out.println("You have now anxiety, but you healed due to the rest you got!");
+        System.out.println("");
+        System.out.println("---------------------------------------------------------------------------------------------");
+        System.out.println("your current stats:");
+        System.out.println("Your hp: " + playerHp);
+        System.out.println("You are carrying: " + playerWep + ", crippling anxiety and sexual diseases.");
+        System.out.println("");
+        System.out.println("---------------------------------------------------------------------------------------------");
     }
-
+    public void castle(){
+        System.out.println("");
+        System.out.println("");
+    }
 }
